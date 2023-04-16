@@ -126,6 +126,7 @@ apple_xcframework(
         ],
         "device": ["arm64"],
     },
+    umbrella_header = "Tink.h"
 )
 
 ############################
