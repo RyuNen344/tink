@@ -30,8 +30,8 @@ def tink_cc_gcpkms_deps():
         # Release from 2022-09-16.
         http_archive(
             name = "build_bazel_rules_apple",
-            sha256 = "90e3b5e8ff942be134e64a83499974203ea64797fd620eddeb71b3a8e1bff681",
-            url = "https://github.com/bazelbuild/rules_apple/releases/download/1.1.2/rules_apple.1.1.2.tar.gz",
+            sha256 = "9e26307516c4d5f2ad4aee90ac01eb8cd31f9b8d6ea93619fc64b3cbc81b0944",
+            url = "https://github.com/bazelbuild/rules_apple/releases/download/2.2.0/rules_apple.2.2.0.tar.gz",
         )
     if not native.existing_rule("build_bazel_rules_swift"):
         # Release from 2022-09-16.

@@ -20,7 +20,7 @@
 
 #import "TINKKeyTemplate.h"
 
-#include "third_party/tink/objc/proto_redirect/tink_cc_pb_redirect.h"
+#include "proto_redirect/tink_cc_pb_redirect.h"
 
 @interface TINKKeyTemplate ()
 

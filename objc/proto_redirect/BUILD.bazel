@@ -5,6 +5,7 @@ package(default_visibility = ["//:__subpackages__"])
 cc_library(
     name = "tink_cc_pb_redirect",
     hdrs = ["tink_cc_pb_redirect.h"],
+    visibility = ["//visibility:public"],
     deps = ["@tink_cc//proto:tink_cc_proto"],
 )
 
@@ -12,6 +13,7 @@ cc_library(
     name = "aes_siv_cc_pb_redirect",
     testonly = 1,
     hdrs = ["aes_siv_cc_pb_redirect.h"],
+    visibility = ["//visibility:public"],
     deps = ["@tink_cc//proto:aes_siv_cc_proto"],
 )
 
@@ -19,6 +21,7 @@ cc_library(
     name = "aes_gcm_cc_pb_redirect",
     testonly = 1,
     hdrs = ["aes_gcm_cc_pb_redirect.h"],
+    visibility = ["//visibility:public"],
     deps = ["@tink_cc//proto:aes_gcm_cc_proto"],
 )
 
@@ -26,5 +29,6 @@ cc_library(
     name = "hmac_cc_pb_redirect",
     testonly = 1,
     hdrs = ["hmac_cc_pb_redirect.h"],
+    visibility = ["//visibility:public"],
     deps = ["@tink_cc//proto:hmac_cc_proto"],
 )

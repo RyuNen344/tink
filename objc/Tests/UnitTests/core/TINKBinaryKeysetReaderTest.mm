@@ -27,7 +27,7 @@
 #import "util/TINKStrings.h"
 
 #include "tink/util/test_util.h"
-#include "third_party/tink/objc/proto_redirect/tink_cc_pb_redirect.h"
+#include "proto_redirect/tink_cc_pb_redirect.h"
 
 static NSData *gBadSerializedKeyset;
 static NSData *gGoodSerializedKeyset;
