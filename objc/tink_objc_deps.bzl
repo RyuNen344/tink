@@ -7,24 +7,23 @@ def tink_objc_deps():
     if not native.existing_rule("build_bazel_rules_apple"):
         # Release from 2022-12-21.
         http_archive(
-            strip_prefix = "rules_apple-2.0.0",
             name = "build_bazel_rules_apple",
-            sha256 = "58fef2369c53b0d9a75441bc40489b586a7ccce24335c9b51ccfa7265623aeb4",
-            url = "https://github.com/bazelbuild/rules_apple/archive/refs/tags/2.0.0.zip",
+            sha256 = "9e26307516c4d5f2ad4aee90ac01eb8cd31f9b8d6ea93619fc64b3cbc81b0944",
+            url = "https://github.com/bazelbuild/rules_apple/releases/download/2.2.0/rules_apple.2.2.0.tar.gz",
         )
     if not native.existing_rule("build_bazel_rules_swift"):
         # Release from 2022-09-16.
         http_archive(
             name = "build_bazel_rules_swift",
-            sha256 = "51efdaf85e04e51174de76ef563f255451d5a5cd24c61ad902feeadafc7046d9",
-            url = "https://github.com/bazelbuild/rules_swift/releases/download/1.2.0/rules_swift.1.2.0.tar.gz",
+            sha256 = "bf2861de6bf75115288468f340b0c4609cc99cc1ccc7668f0f71adfd853eedb3",
+            url = "https://github.com/bazelbuild/rules_swift/releases/download/1.7.1/rules_swift.1.7.1.tar.gz",
         )
     if not native.existing_rule("build_bazel_apple_support"):
         # Release from 2022-10-31.
         http_archive(
             name = "build_bazel_apple_support",
-            sha256 = "2e3dc4d0000e8c2f5782ea7bb53162f37c485b5d8dc62bb3d7d7fc7c276f0d00",
-            url = "https://github.com/bazelbuild/apple_support/releases/download/1.3.2/apple_support.1.3.2.tar.gz",
+            sha256 = "9a2338d6f8dad3244f823f2dc6084a03e4d0fbb27ca892dc970e6890d5b48184",
+            url = "https://github.com/bazelbuild/apple_support/releases/download/1.5.0/apple_support.1.5.0.tar.gz",
         )
 
     # Currently required by ios_unit_test

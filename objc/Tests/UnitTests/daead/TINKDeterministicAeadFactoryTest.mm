@@ -41,8 +41,8 @@
 #include "tink/proto_keyset_format.h"
 #include "tink/util/status.h"
 #include "tink/util/test_util.h"
-#include "third_party/tink/objc/proto_redirect/tink_cc_pb_redirect.h"
-#include "third_party/tink/objc/proto_redirect/aes_siv_cc_pb_redirect.h"
+#include "proto_redirect/tink_cc_pb_redirect.h"
+#include "proto_redirect/aes_siv_cc_pb_redirect.h"
 
 using ::crypto::tink::AesSivKeyManager;
 using ::crypto::tink::InsecureSecretKeyAccess;
